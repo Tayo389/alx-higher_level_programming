@@ -1,5 +1,18 @@
-#!/bin/python3
-# Author - Godswill kalu
-for letter in range(97, 123):
-    if chr(letter) != 'q' and chr(letter) != 'e':
-        print("{}".format(chr(letter)),end="")
+#include <stdio.h>
+
+/**
+ * main - prints the alphabet in lowercase, and then in uppercase,
+ * followed by a new line
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+        int ch;
+
+        for (ch = 'a'; ch <= 'z'; ch++)
+                putchar(ch);
+        for (ch = 'A'; ch <= 'z'; ch++)
+                putchar(ch);
+        putchar('\n');
+        return (0);
+}

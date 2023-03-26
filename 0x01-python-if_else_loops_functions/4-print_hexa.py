@@ -1,6 +1,22 @@
-#!/usr/bin/python3
-# Author - Godswill Kalu
+#include <stdio.h>
 
-"""print numbers 0 to 98 in decimal and hexadecimal."""
-for number in range(0, 99):
-    print("{} = {}".format(number, hex(number)))
+/**
+ * main - prints the alphabet in lowercase,
+ * followed by a new line, except q and e
+ * Return: Aways 0 (Sucess)
+ */
+int main(void)
+{
+        char ch = 'a';
+
+        while (ch <= 'z')
+        {
+                if (ch != 'e' && ch != 'q')
+                {
+                        putchar(ch);
+                }
+                ch++;
+        }
+        putchar('\n');
+        return (0);
+}

@@ -1,8 +1,18 @@
-#!/usr/bin/python3
-# Author -Godswill Kalu
+#include <stdio.h>
 
-def islower(c):
-    """function checks for lowercase characters,"""
-    if ord(c) >= 97 and ord(c) <= 122:
-    else:
-        return False
+/**
+ * main - prints the lowercase alphabet in reverse,
+ * followed by a new line
+ * Return: Always 0(Success)
+ */
+int main(void)
+{
+        char ch;
+
+        for (ch = 'z'; ch >= 'a', ch--)
+        {
+                putchar(ch);
+        }
+        putchar('\n');
+        return (0);
+}

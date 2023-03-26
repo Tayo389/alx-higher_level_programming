@@ -1,5 +1,18 @@
-#!/usr/bin/python3
-"""print the alphabet in lowercase, not followed by a line."""
+#include <stdio.h>
 
-for letter in range(97, 123):
-    print("{}".format(chr(letter)), end="")
+/**
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+        char ch;
+
+        for (ch = 'a'; ch <= 'z'; ch++)
+        {
+                putchar(ch);
+        }
+        putchar('\n');
+        return (0);
+}

@@ -1,9 +1,17 @@
-#!/usr/bin/python3
-# Author - Godswill Kalu
+#include <stdio.h>
 
-for digit1 in range(0, 10):
-    for digit2 in range(digit1 + 1, 10):
-        if digit1 == 8 and digit2 == 9:
-           print("{}{}".format(digit1, digit2))
-        else:
-            print("{}{}".format(digit1, digit2), end=", ")
+/**
+ * main - prints all single digit numbers of base 10 starting from  0,
+ * followed by a new line, using putchar
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+        int n;
+
+        for (n = 48; n < 58; n++)
+        {
+                putchar(n);
+        }
+        putchar('\n');
+        return (0);
