@@ -1,22 +1,6 @@
-#include <stdio.h>
+#!/usr/bin/python3
+# Author - OMOTAYO OLUWOLE
 
-/**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-        int n;
-
-        for (n = 48; n < 58; n++)
-        {
-                putchar(n);
-                if (n != 57)
-                {
-                        putchar(',');
-                        putchar(' ');
-                }
-        }
-        putchar('\n');
-        return (0);
-}
+def print_last_digit(number):
+    print(abs(number) % 10, end="")
+    return (abs(number) % 10)
